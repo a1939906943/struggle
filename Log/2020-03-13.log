@@ -1,0 +1,62 @@
+2020-03-13 00:05:41.603 [http-nio-8081-exec-6] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:09:56.765 [http-nio-8081-exec-10] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:11:32.021 [http-nio-8081-exec-3] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:11:34.421 [http-nio-8081-exec-4] INFO  org.apache.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:467)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-13 00:12:25.100 [http-nio-8081-exec-5] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:14:00.092 [http-nio-8081-exec-7] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:15:10.517 [http-nio-8081-exec-1] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:15:30.555 [http-nio-8081-exec-3] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:16:10.724 [http-nio-8081-exec-6] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:16:28.313 [http-nio-8081-exec-9] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:18:18.572 [http-nio-8081-exec-3] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:18:32.018 [http-nio-8081-exec-4] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:18:35.985 [http-nio-8081-exec-5] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:19:02.403 [http-nio-8081-exec-6] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:19:03.674 [http-nio-8081-exec-7] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:19:23.324 [http-nio-8081-exec-8] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:19:24.626 [http-nio-8081-exec-9] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:22:44.430 [http-nio-8081-exec-1] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:23:08.227 [http-nio-8081-exec-2] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:23:51.665 [http-nio-8081-exec-6] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:23:53.170 [http-nio-8081-exec-7] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:24:13.875 [http-nio-8081-exec-8] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:24:36.068 [http-nio-8081-exec-10] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:25:59.443 [http-nio-8081-exec-7] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:26:09.465 [http-nio-8081-exec-3] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:27:28.828 [http-nio-8081-exec-7] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:27:59.044 [http-nio-8081-exec-10] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:28:47.657 [http-nio-8081-exec-3] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:29:03.950 [http-nio-8081-exec-6] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:29:58.336 [http-nio-8081-exec-9] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:30:20.222 [http-nio-8081-exec-2] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:30:59.133 [http-nio-8081-exec-5] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:31:44.113 [http-nio-8081-exec-8] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:32:29.036 [http-nio-8081-exec-2] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:32:31.083 [http-nio-8081-exec-4] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:33:24.332 [http-nio-8081-exec-7] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:35:18.221 [http-nio-8081-exec-1] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:37:08.049 [http-nio-8081-exec-5] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:42:11.022 [http-nio-8081-exec-9] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:43:01.372 [http-nio-8081-exec-3] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:43:24.284 [http-nio-8081-exec-6] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:43:26.546 [http-nio-8081-exec-8] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:44:13.129 [http-nio-8081-exec-1] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:44:38.684 [http-nio-8081-exec-4] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:45:40.043 [http-nio-8081-exec-7] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:45:53.542 [http-nio-8081-exec-10] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:46:33.300 [http-nio-8081-exec-3] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:47:26.835 [http-nio-8081-exec-6] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:47:33.098 [http-nio-8081-exec-9] INFO  com.coolwe.start.controller.MainController - /showDatabases
+2020-03-13 00:48:09.434 [http-nio-8081-exec-2] INFO  com.coolwe.start.controller.MainController - /showDatabases

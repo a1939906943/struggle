@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="shortcut icon" href="img/title.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/ft-carousel.css" />
+  <title>db</title>
+</head>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ft-carousel.min.js"></script>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: auto;
+    /* background-image: url("img/rain.gif");
+      background-repeat: no-repeat;
+      background-size: cover; */
+  }
+
+  .loading {
+    background: url("img/loading.gif") no-repeat center center;
+  }
+
+  .head {
+    margin: 20px auto;
+    height: 60px;
+    width: 750px;
+  }
+
+  .main {
+    margin: 80px auto;
+    height: 400px;
+    width: 750px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border-style: outset;
+    text-align: left;
+    overflow-y: auto;
+  }
+
+  .each {
+    height: 40px;
+    width: 100px;
+    margin: 20px 20px;
+    border: 1px transparent solid;
+    border-radius: 5%;
+    display: inline-flex;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .back {
+    height: 40px;
+    width: 100px;
+    margin: 20px 20px;
+    border: 1px transparent solid;
+    border-radius: 5%;
+    display: inline-flex;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .back i {
+    padding-left: 40px;
+  }
+
+  .back:hover {
+    border: 1px rgb(168, 179, 228) solid;
+    border-radius: 5%;
+    transform: scale(1.1, 1.1);
+  }
+
+  .each:hover {
+    border: 1px rgb(168, 179, 228) solid;
+    border-radius: 5%;
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+  }
+
+  .each p {
+    font-size: 5px;
+    color: red;
+    word-wrap: break-word;
+    width: 80px;
+    padding-left: 5px;
+    overflow-y: auto;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  i {
+    padding-left: 20px;
+    vertical-align: middle;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 20px;
+    vertical-align: middle;
+  }
+
+
+  .icon {
+    height: 50px;
+    width: 50px;
+    border: 0 blue solid;
+    border-radius: 50%;
+    margin-right: 0;
+  }
+
+  .my {
+    margin-left: -30px;
+  }
+
+  .my:hover {}
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    table-layout: fixed;
+  }
+
+  td {
+    word-break: break-all;
+  }
+
+  .failed {
+    margin: 100px 300px;
+    color: red;
+  }
+
+  .img {
+    width: 624px;
+    height: 336px;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #464576;
+  }
+
+  .carousel-item {
+    line-height: 336px;
+    color: #fff;
+    font-family: Arial Black;
+  }
+
+  .show {
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    border-style: outset;
+    margin: 200px 500px;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .close {
+    height: 50px;
+    width: 50px;
+    border: 1px solid wheat;
+    border-radius: 50%;
+    right: 0;
+  }
+</style>
+<script>
+  $(function () {
+    goDB();
+  });
+  function showDatabases() {
+    $(".main").addClass("loading");
+    $(".main").html("");
+    callServer({
+      req: "showDatabases",
+      success: function (data) {
+        console.log(data)
+        var fragment = document.createDocumentFragment();
+        if (data.length == 0) {
+          var div = document.createElement("div");
+          div.className = "failed";
+          div.innerHTML = "nothing。。。"
+          fragment.append(div);
+        } else {
+          var div = document.createElement("div");
+          div.className = "each";
+          div.onclick = function () {
+            $(".show").removeClass("hidden");
+          }
+          $(div).html(
+            `<i style='font-size:24px;' class='fa'>&#xf196</i><p>创建</p>`
+          );
+          fragment.appendChild(div);
+          for (var i in data) {
+            var div = document.createElement("div");
+            div.className = "each";
+            div.onclick = function () {
+              showTables($(this).find("p").html());
+            }
+            $(div).html(
+              `<i style='font-size:24px;' class='fa'>&#xf1c0</i><p>${data[i].Database}</p>`
+            );
+            fragment.appendChild(div);
+          }
+        }
+        $(".main").append(fragment);
+        $(".main").removeClass("loading");
+      },
+      error: function (data) {
+        $(".main").append(data);
+      }
+    });
+  }
+  function showTable(database, tableName) {
+    $(".main").addClass("loading");
+    $(".main").html("");
+    var req = {
+      database: database,
+      tableName: tableName
+    };
+    callServer({
+      req: "showtable",
+      data: req,
+      success: function (data) {
+        console.log(data);
+        var fragment = document.createDocumentFragment();
+        var back = document.createElement("div");
+        back.className = "back";
+        back.onclick = function () {
+          showTables(database);
+        };
+        back.innerHTML = "<i style='font-size:24px;' class='fa'>&#xf100</i>" + database;
+        fragment.appendChild(back);
+        if (data.length == 0) {
+          var div = document.createElement("div");
+          div.className = "failed";
+          div.innerHTML = "nothing。。。"
+          fragment.append(div);
+        } else {
+          var table = document.createElement("table");
+          table.border = "1";
+          for (var i in data) {
+            var tr = document.createElement("tr");
+            if (i == 0) {
+              for (var i in data[i]) {
+                var td = document.createElement("td");
+                $(td).html(
+                  `${i}`
+                );
+                tr.appendChild(td);
+              }
+            }
+            for (var j in data[i]) {
+              var td = document.createElement("td");
+              $(td).html(
+                `${data[i][j]}`
+              );
+              tr.appendChild(td);
+            }
+            table.appendChild(tr);
+          }
+          fragment.appendChild(table);
+        }
+        $(".main").append(fragment);
+        $(".main").removeClass("loading");
+      },
+      error: function (data) {
+        console.log(data);
+      }
+    });
+  }
+  function showTables(database) {
+    $(".main").addClass("loading");
+    $(".main").html("");
+    var req = {
+      database: database
+    };
+    callServer({
+      req: "showtables",
+      data: req,
+      success: function (data) {
+        var fragment = document.createDocumentFragment();
+        var back = document.createElement("div");
+        back.className = "back";
+        back.onclick = function () {
+          showDatabases();
+        };
+        back.innerHTML = "<i style='font-size:24px;' class='fa'>&#xf100</i>";
+        fragment.appendChild(back);
+        if (data.length == 0) {
+          var div = document.createElement("div");
+          div.className = "failed";
+          div.innerHTML = "nothing。。。"
+          fragment.append(div);
+        } else {
+          for (var i in data) {
+            var div = document.createElement("div");
+            div.className = "each";
+            div.onclick = function () {
+              showTable(database, $(this).find("p").html());
+            }
+            $(div).html(
+              `<i style='font-size:24px;' class='fa'>&#xf18c</i><p>${data[i].table_name}</p>`
+            );
+            fragment.appendChild(div);
+          }
+        }
+        $(".main").append(fragment);
+        $(".main").removeClass("loading");
+      },
+      error: function (data) {
+        console.log(data);
+      }
+    });
+  }
+  function goDB() {
+    showDatabases();
+  }
+  function close() {
+    console.log(111)
+    $(".show").addClass("hidden");
+  }
+</script>
+
+<body>
+  <div class="show hidden">
+    <button class="close" onclick="close()">
+    </button>
+    <div class="db_name">
+      Name:
+      <input type="text" name="" id="" placeholder="请输入数据库名称">
+    </div>
+    <div class="option">
+      charset/collation:
+      <select name="" id="">
+        <option value="">111</option>
+        <option value="">111</option>
+        <option value="">1111</option>
+      </select>
+    </div>
+    <div class="btn">
+      <button onclick="alert(111)">apply</button>
+    </div>
+  </div>
+  <div class="head">
+    <ul>
+      <li><a href="#" onclick="goHome()">首页</a></li>
+      <li><a href="#" onclick="goDB()">DB</a></li>
+      <li>您的身份：超级管理员</li>
+      <li><img class="icon" src="img/a1.jpg" alt="头像加载失败" /></li>
+      <li>
+        <div class="my">hbb<i style='font-size:24px;' class='fa'>&#xf107</i>
+          <div class="info hidden">我的资料</div>
+          <div class="info hidden">退出</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="main loading">
+  </div>
+</body>
+
+</html>

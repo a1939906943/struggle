@@ -1,0 +1,25 @@
+2020-02-28 12:36:24.101 [main] INFO  com.coolwe.start.StartApplication - Starting StartApplication on DESKTOP-08VGM8P with PID 13140 (D:\struggle\start\target\classes started by 19399 in D:\struggle\start)
+2020-02-28 12:36:24.104 [main] DEBUG com.coolwe.start.StartApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-02-28 12:36:24.104 [main] INFO  com.coolwe.start.StartApplication - No active profile set, falling back to default profiles: default
+2020-02-28 12:36:24.782 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2020-02-28 12:36:24.783 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.coolwe.start'
+2020-02-28 12:36:24.789 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-02-28 12:36:24.792 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\struggle\start\target\classes\com\coolwe\start\dao\MainDao.class]
+2020-02-28 12:36:24.793 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'mainDao' and 'com.coolwe.start.dao.MainDao' mapperInterface
+2020-02-28 12:36:24.794 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'mainDao'.
+2020-02-28 12:36:25.358 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-28 12:36:25.366 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-28 12:36:25.366 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-02-28 12:36:25.372 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\soft\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\soft\Java\jdk1.8.0_202\bin;D:\soft\sqlite3;D:\soft\nodejs;D:\soft\Git\cmd;D:\soft\nodejs\node_global;D:\soft\nodejs\node_cache;C:\Users\19399\AppData\Local\Microsoft\WindowsApps;D:\soft\bandizip\;D:\soft\Microsoft VS Code\bin;.]
+2020-02-28 12:36:25.463 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-28 12:36:25.546 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.sqlite.JDBC found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-02-28 12:36:25.616 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-02-28 12:36:25.617 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.coolwe.domain' for aliases
+2020-02-28 12:36:25.618 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+2020-02-28 12:36:25.883 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2020-02-28 12:36:25.966 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-02-28 12:36:25.986 [main] INFO  com.coolwe.start.StartApplication - Started StartApplication in 2.219 seconds (JVM running for 3.934)
+2020-02-28 12:36:34.773 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-28 12:36:34.801 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-02-28 12:38:12.469 [http-nio-8080-exec-8] INFO  com.coolwe.start.controller.MainController - /hello
+2020-02-28 13:47:57.136 [http-nio-8080-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

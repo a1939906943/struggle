@@ -1,0 +1,399 @@
+2020-03-03 22:36:54.428 [main] INFO  com.coolwe.start.StartApplication - Starting StartApplication on DESKTOP-08VGM8P with PID 10080 (D:\struggle\start\target\classes started by 19399 in d:\struggle\start)
+2020-03-03 22:36:54.556 [main] DEBUG com.coolwe.start.StartApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-03-03 22:36:54.624 [main] INFO  com.coolwe.start.StartApplication - No active profile set, falling back to default profiles: default
+2020-03-03 22:36:55.640 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2020-03-03 22:36:55.642 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.coolwe.start'
+2020-03-03 22:36:55.651 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-03-03 22:36:55.659 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\struggle\start\target\classes\com\coolwe\start\dao\MainDao.class]
+2020-03-03 22:36:55.665 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'mainDao' and 'com.coolwe.start.dao.MainDao' mapperInterface
+2020-03-03 22:36:55.665 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'mainDao'.
+2020-03-03 22:36:56.680 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-03 22:36:56.692 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-03 22:36:56.694 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-03-03 22:36:56.709 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\soft\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\soft\Java\jdk1.8.0_202\bin;D:\soft\sqlite3;D:\soft\nodejs;D:\soft\Git\cmd;D:\soft\nodejs\node_global;D:\soft\nodejs\node_cache;C:\Users\19399\AppData\Local\Microsoft\WindowsApps;D:\soft\bandizip\;D:\soft\Microsoft VS Code\bin;.]
+2020-03-03 22:36:56.808 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-03 22:36:56.931 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.sqlite.JDBC found in Thread context class loader sun.misc.Launcher$AppClassLoader@6d06d69c
+2020-03-03 22:36:57.025 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-03-03 22:36:57.026 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.coolwe.domain' for aliases
+2020-03-03 22:36:57.028 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+2020-03-03 22:36:57.524 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2020-03-03 22:36:57.689 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-03-03 22:36:57.741 [main] INFO  com.coolwe.start.StartApplication - Started StartApplication in 4.257 seconds (JVM running for 5.2)
+2020-03-03 22:37:13.106 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-03 22:37:13.167 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-03-03 22:38:16.016 [http-nio-8080-exec-2] INFO  com.coolwe.start.controller.MainController - /login:{"name":"hbb","password":"hbb123","code":"UdE2","timeStamp":"2020-02-25 22:24:28"}
+2020-03-03 22:38:16.061 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:38:16.068 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2934fdfe] was not registered for synchronization because synchronization is not active
+2020-03-03 22:38:16.077 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2020-03-03 22:38:16.079 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2020-03-03 22:38:16.080 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2020-03-03 22:38:16.081 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2020-03-03 22:38:16.082 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2020-03-03 22:38:16.082 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2020-03-03 22:38:16.084 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2020-03-03 22:38:16.084 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2020-03-03 22:38:16.085 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2020-03-03 22:38:16.085 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2020-03-03 22:38:16.086 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2020-03-03 22:38:16.086 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.sqlite.JDBC"
+2020-03-03 22:38:16.086 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2020-03-03 22:38:16.087 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2020-03-03 22:38:16.087 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2020-03-03 22:38:16.087 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2020-03-03 22:38:16.088 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2020-03-03 22:38:16.088 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:sqlite:start.db
+2020-03-03 22:38:16.089 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2020-03-03 22:38:16.090 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2020-03-03 22:38:16.090 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2020-03-03 22:38:16.090 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2020-03-03 22:38:16.091 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2020-03-03 22:38:16.091 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2020-03-03 22:38:16.091 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2020-03-03 22:38:16.092 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2020-03-03 22:38:16.092 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2020-03-03 22:38:16.093 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2020-03-03 22:38:16.093 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2020-03-03 22:38:16.093 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2020-03-03 22:38:16.093 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2020-03-03 22:38:16.094 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2020-03-03 22:38:16.094 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - username........................none
+2020-03-03 22:38:16.094 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2020-03-03 22:38:16.095 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-03 22:38:16.491 [http-nio-8080-exec-2] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@4c217da5
+2020-03-03 22:38:16.497 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-03 22:38:16.508 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@457698817 wrapping org.sqlite.jdbc4.JDBC4Connection@4c217da5] will not be managed by Spring
+2020-03-03 22:38:16.521 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.getCodeByTime - ==>  Preparing: SELECT * FROM VERIFYCODE WHERE TIMESTAMP = ? AND CODE = ? 
+2020-03-03 22:38:16.570 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.getCodeByTime - ==> Parameters: 2020-02-25 22:24:28(String), UdE2(String)
+2020-03-03 22:38:16.598 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2020-03-03 22:38:16.598 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.getCodeByTime - <==      Total: 1
+2020-03-03 22:38:16.601 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@4e1cbc90
+2020-03-03 22:38:16.604 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2934fdfe]
+2020-03-03 22:38:16.605 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@40db5b23
+2020-03-03 22:38:16.606 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:38:16.607 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@44e4d7e0
+2020-03-03 22:38:16.607 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dadf04a] was not registered for synchronization because synchronization is not active
+2020-03-03 22:38:16.609 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2076919156 wrapping org.sqlite.jdbc4.JDBC4Connection@4c217da5] will not be managed by Spring
+2020-03-03 22:38:16.609 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1e65118
+2020-03-03 22:38:16.611 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.getUserByName - ==>  Preparing: SELECT * FROM USER WHERE NAME = ? 
+2020-03-03 22:38:16.612 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.getUserByName - ==> Parameters: hbb(String)
+2020-03-03 22:38:16.613 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2a359588
+2020-03-03 22:38:16.615 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@30add1ae
+2020-03-03 22:38:16.616 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.getUserByName - <==      Total: 1
+2020-03-03 22:38:16.616 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dadf04a]
+2020-03-03 22:38:16.617 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@52944b8c
+2020-03-03 22:38:16.618 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:38:16.618 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@282279ee] was not registered for synchronization because synchronization is not active
+2020-03-03 22:38:16.618 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@61c9ae57
+2020-03-03 22:38:16.619 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@277583487 wrapping org.sqlite.jdbc4.JDBC4Connection@4c217da5] will not be managed by Spring
+2020-03-03 22:38:16.620 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@67d6fe33
+2020-03-03 22:38:16.620 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.login - ==>  Preparing: select * from user where name = ? and password = ? 
+2020-03-03 22:38:16.621 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2020-03-03 22:38:16.621 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.login - ==> Parameters: hbb(String), hbb123(String)
+2020-03-03 22:38:16.623 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.login - <==      Total: 1
+2020-03-03 22:38:16.624 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@282279ee]
+2020-03-03 22:38:46.602 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:39:16.605 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:39:46.609 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:40:16.612 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:40:44.484 [http-nio-8080-exec-10] INFO  com.coolwe.start.controller.MainController - /getVerifyCode
+2020-03-03 22:40:45.195 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:40:45.195 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72ce149e] was not registered for synchronization because synchronization is not active
+2020-03-03 22:40:45.196 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2117656011 wrapping org.sqlite.jdbc4.JDBC4Connection@4c217da5] will not be managed by Spring
+2020-03-03 22:40:45.197 [http-nio-8080-exec-10] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==>  Preparing: INSERT INTO VERIFYCODE (TIMESTAMP,CODE) VALUES(?,?) 
+2020-03-03 22:40:45.209 [http-nio-8080-exec-10] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==> Parameters: 2020-03-03 22:40:45(String), ofhz(String)
+2020-03-03 22:40:45.354 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72ce149e]
+2020-03-03 22:40:46.616 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:40:55.571 [http-nio-8080-exec-1] INFO  com.coolwe.start.controller.MainController - /getVerifyCode
+2020-03-03 22:40:55.615 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:40:55.616 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25cc400f] was not registered for synchronization because synchronization is not active
+2020-03-03 22:40:55.618 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1619797422 wrapping org.sqlite.jdbc4.JDBC4Connection@4c217da5] will not be managed by Spring
+2020-03-03 22:40:55.632 [http-nio-8080-exec-1] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==>  Preparing: INSERT INTO VERIFYCODE (TIMESTAMP,CODE) VALUES(?,?) 
+2020-03-03 22:40:55.633 [http-nio-8080-exec-1] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==> Parameters: 2020-03-03 22:40:55(String), EIzp(String)
+2020-03-03 22:40:55.835 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25cc400f]
+2020-03-03 22:40:57.119 [http-nio-8080-exec-3] INFO  com.coolwe.start.controller.MainController - /getVerifyCode
+2020-03-03 22:40:57.135 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:40:57.136 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f80f38d] was not registered for synchronization because synchronization is not active
+2020-03-03 22:40:57.137 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@812780887 wrapping org.sqlite.jdbc4.JDBC4Connection@4c217da5] will not be managed by Spring
+2020-03-03 22:40:57.143 [http-nio-8080-exec-3] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==>  Preparing: INSERT INTO VERIFYCODE (TIMESTAMP,CODE) VALUES(?,?) 
+2020-03-03 22:40:57.156 [http-nio-8080-exec-3] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==> Parameters: 2020-03-03 22:40:57(String), lNpr(String)
+2020-03-03 22:40:57.286 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f80f38d]
+2020-03-03 22:41:16.619 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:41:46.623 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:42:16.625 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:42:46.629 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:43:16.632 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:43:46.635 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:44:16.639 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:44:46.641 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:45:16.645 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:45:46.647 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:46:16.650 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:46:46.653 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:47:16.657 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:47:46.660 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:48:16.663 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:48:46.666 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:49:16.669 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:49:46.672 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:50:16.674 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:50:46.678 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:51:16.685 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:51:46.688 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:52:16.691 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:52:46.695 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:53:16.699 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:53:46.702 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:54:16.705 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:54:46.708 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:55:16.710 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:55:46.714 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:56:16.715 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:57:21.017 [main] INFO  com.coolwe.start.StartApplication - Starting StartApplication on DESKTOP-08VGM8P with PID 7600 (D:\struggle\start\target\classes started by 19399 in d:\struggle\start)
+2020-03-03 22:57:21.020 [main] DEBUG com.coolwe.start.StartApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-03-03 22:57:21.021 [main] INFO  com.coolwe.start.StartApplication - No active profile set, falling back to default profiles: default
+2020-03-03 22:57:21.728 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2020-03-03 22:57:21.728 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.coolwe.start'
+2020-03-03 22:57:21.735 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-03-03 22:57:21.755 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\struggle\start\target\classes\com\coolwe\start\dao\MainDao.class]
+2020-03-03 22:57:21.764 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'mainDao' and 'com.coolwe.start.dao.MainDao' mapperInterface
+2020-03-03 22:57:21.767 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'mainDao'.
+2020-03-03 22:57:22.644 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-03 22:57:22.665 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-03 22:57:22.666 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-03-03 22:57:22.679 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\soft\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\soft\Java\jdk1.8.0_202\bin;D:\soft\sqlite3;D:\soft\nodejs;D:\soft\Git\cmd;D:\soft\nodejs\node_global;D:\soft\nodejs\node_cache;C:\Users\19399\AppData\Local\Microsoft\WindowsApps;D:\soft\bandizip\;D:\soft\Microsoft VS Code\bin;.]
+2020-03-03 22:57:22.787 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-03 22:57:22.901 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.sqlite.JDBC found in Thread context class loader sun.misc.Launcher$AppClassLoader@6d06d69c
+2020-03-03 22:57:22.971 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-03-03 22:57:22.972 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.coolwe.domain' for aliases
+2020-03-03 22:57:22.973 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+2020-03-03 22:57:23.664 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2020-03-03 22:57:23.891 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-03-03 22:57:23.943 [main] INFO  com.coolwe.start.StartApplication - Started StartApplication in 3.225 seconds (JVM running for 3.731)
+2020-03-03 22:57:58.755 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-03 22:57:58.898 [http-nio-8080-exec-1] INFO  com.coolwe.start.controller.MainController - /getVerifyCode
+2020-03-03 22:57:59.387 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:57:59.423 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@785c8fb1] was not registered for synchronization because synchronization is not active
+2020-03-03 22:57:59.473 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2020-03-03 22:57:59.478 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2020-03-03 22:57:59.493 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2020-03-03 22:57:59.513 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2020-03-03 22:57:59.514 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2020-03-03 22:57:59.529 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2020-03-03 22:57:59.561 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2020-03-03 22:57:59.563 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2020-03-03 22:57:59.563 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2020-03-03 22:57:59.563 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2020-03-03 22:57:59.564 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2020-03-03 22:57:59.565 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.sqlite.JDBC"
+2020-03-03 22:57:59.565 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2020-03-03 22:57:59.565 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2020-03-03 22:57:59.569 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2020-03-03 22:57:59.610 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2020-03-03 22:57:59.612 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2020-03-03 22:57:59.612 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:sqlite:start.db
+2020-03-03 22:57:59.612 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2020-03-03 22:57:59.613 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2020-03-03 22:57:59.613 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2020-03-03 22:57:59.613 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2020-03-03 22:57:59.613 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2020-03-03 22:57:59.614 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2020-03-03 22:57:59.623 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2020-03-03 22:57:59.644 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2020-03-03 22:57:59.644 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2020-03-03 22:57:59.645 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2020-03-03 22:57:59.645 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2020-03-03 22:57:59.645 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2020-03-03 22:57:59.646 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2020-03-03 22:57:59.646 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2020-03-03 22:57:59.646 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - username........................none
+2020-03-03 22:57:59.647 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2020-03-03 22:57:59.647 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-03 22:57:59.798 [http-nio-8080-exec-1] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1e56c735
+2020-03-03 22:57:59.802 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-03 22:57:59.824 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1857440759 wrapping org.sqlite.jdbc4.JDBC4Connection@1e56c735] will not be managed by Spring
+2020-03-03 22:57:59.829 [http-nio-8080-exec-1] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==>  Preparing: INSERT INTO VERIFYCODE (TIMESTAMP,CODE) VALUES(?,?) 
+2020-03-03 22:57:59.879 [http-nio-8080-exec-1] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==> Parameters: 2020-03-03 22:57:59(String), EwsE(String)
+2020-03-03 22:57:59.906 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2020-03-03 22:57:59.908 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@16f743fa
+2020-03-03 22:57:59.909 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1830bf54
+2020-03-03 22:57:59.911 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1c0f288a
+2020-03-03 22:57:59.930 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@590db56f
+2020-03-03 22:58:00.005 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@7549d527
+2020-03-03 22:58:00.060 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@689e0ec5
+2020-03-03 22:58:00.062 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@d303024
+2020-03-03 22:58:00.080 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@39224a20
+2020-03-03 22:58:00.133 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2f940ce
+2020-03-03 22:58:00.144 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2020-03-03 22:58:00.174 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@785c8fb1]
+2020-03-03 22:58:03.960 [http-nio-8080-exec-2] INFO  com.coolwe.start.controller.MainController - /getVerifyCode
+2020-03-03 22:58:03.987 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 22:58:03.993 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c79ef25] was not registered for synchronization because synchronization is not active
+2020-03-03 22:58:03.995 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@525640087 wrapping org.sqlite.jdbc4.JDBC4Connection@1e56c735] will not be managed by Spring
+2020-03-03 22:58:03.998 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==>  Preparing: INSERT INTO VERIFYCODE (TIMESTAMP,CODE) VALUES(?,?) 
+2020-03-03 22:58:04.001 [http-nio-8080-exec-2] DEBUG com.coolwe.start.dao.MainDao.insertCode - ==> Parameters: 2020-03-03 22:58:03(String), LgSJ(String)
+2020-03-03 22:58:04.220 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c79ef25]
+2020-03-03 22:58:29.909 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:58:59.911 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:59:29.914 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 22:59:59.917 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:00:29.920 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:00:59.942 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:01:29.945 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:01:59.949 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:02:29.953 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:02:59.956 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:03:29.959 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:03:59.963 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:04:29.980 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:04:59.983 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:05:29.987 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:05:59.990 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:06:29.993 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:06:59.995 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:07:30.006 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-03 23:48:27.177 [main] INFO  com.coolwe.start.StartApplication - Starting StartApplication on DESKTOP-08VGM8P with PID 9700 (D:\struggle\start\target\classes started by 19399 in D:\struggle\start)
+2020-03-03 23:48:27.177 [main] DEBUG com.coolwe.start.StartApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-03-03 23:48:27.177 [main] INFO  com.coolwe.start.StartApplication - No active profile set, falling back to default profiles: default
+2020-03-03 23:48:27.735 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2020-03-03 23:48:27.735 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.coolwe.start'
+2020-03-03 23:48:27.735 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-03-03 23:48:27.735 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\struggle\start\target\classes\com\coolwe\start\dao\MainDao.class]
+2020-03-03 23:48:27.735 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'mainDao' and 'com.coolwe.start.dao.MainDao' mapperInterface
+2020-03-03 23:48:27.735 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'mainDao'.
+2020-03-03 23:48:28.203 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-03 23:48:28.219 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-03 23:48:28.219 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-03-03 23:48:28.219 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\soft\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\soft\Java\jdk1.8.0_202\bin;D:\soft\sqlite3;D:\soft\nodejs;D:\soft\Git\cmd;D:\soft\nodejs\node_global;D:\soft\nodejs\node_cache;C:\Users\19399\AppData\Local\Microsoft\WindowsApps;D:\soft\bandizip\;D:\soft\Microsoft VS Code\bin;.]
+2020-03-03 23:48:28.313 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-03 23:48:28.375 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.sqlite.JDBC found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-03-03 23:48:28.422 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-03-03 23:48:28.422 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.coolwe.domain' for aliases
+2020-03-03 23:48:28.422 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+2020-03-03 23:48:28.672 [main] DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2020-03-03 23:48:28.750 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-03-03 23:48:28.766 [main] INFO  com.coolwe.start.StartApplication - Started StartApplication in 1.886 seconds (JVM running for 3.193)
+2020-03-03 23:48:38.824 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-03 23:48:38.844 [http-nio-8080-exec-1] INFO  com.coolwe.start.controller.MainController - /hello
+2020-03-03 23:48:38.940 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: USER)] with root cause
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: USER)
+	at org.sqlite.core.DB.newSQLException(DB.java:941)
+	at org.sqlite.core.DB.newSQLException(DB.java:953)
+	at org.sqlite.core.DB.throwex(DB.java:918)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:134)
+	at org.sqlite.core.DB.prepare(DB.java:257)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:73)
+	at com.coolwe.start.util.SQLiteJDBC.search(SQLiteJDBC.java:77)
+	at com.coolwe.start.controller.MainController.say(MainController.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.coolwe.start.filter.AccessFilter.doFilter(AccessFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-03 23:49:15.688 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-03 23:49:15.696 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f13bb7] was not registered for synchronization because synchronization is not active
+2020-03-03 23:49:15.704 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.sqlite.JDBC"
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:sqlite::resource:start.db
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - username........................none
+2020-03-03 23:49:15.708 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2020-03-03 23:49:15.712 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-03 23:49:15.732 [http-nio-8080-exec-4] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@55335dfa
+2020-03-03 23:49:15.732 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-03 23:49:15.736 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@380481172 wrapping org.sqlite.jdbc4.JDBC4Connection@55335dfa] will not be managed by Spring
+2020-03-03 23:49:15.740 [http-nio-8080-exec-4] DEBUG com.coolwe.start.dao.MainDao.getAllCode - ==>  Preparing: SELECT * FROM VERIFYCODE 
+2020-03-03 23:49:15.752 [http-nio-8080-exec-4] DEBUG com.coolwe.start.dao.MainDao.getAllCode - ==> Parameters: 
+2020-03-03 23:49:15.780 [http-nio-8080-exec-4] DEBUG com.coolwe.start.dao.MainDao.getAllCode - <==      Total: 493
+2020-03-03 23:49:15.784 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f13bb7]
+2020-03-03 23:49:15.836 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2020-03-03 23:49:15.836 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@26c5948f
+2020-03-03 23:49:15.836 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@28026e27
+2020-03-03 23:49:15.836 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2c3dffff
+2020-03-03 23:49:15.836 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@693f641c
+2020-03-03 23:49:15.836 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6354f458
+2020-03-03 23:49:15.836 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@589ccd43
+2020-03-03 23:49:15.840 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1b1d03a8
+2020-03-03 23:49:15.840 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@9109b53
+2020-03-03 23:49:15.840 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@4da2581d
+2020-03-03 23:49:15.840 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
