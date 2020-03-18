@@ -6,260 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
   <link rel="shortcut icon" href="img/title.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="css/ft-carousel.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <title>db</title>
 </head>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/ft-carousel.min.js"></script>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow: auto;
-    /* background-image: url("img/rain.gif");
-      background-repeat: no-repeat;
-      background-size: cover; */
-  }
-
-  .loading {
-    background: url("img/loading.gif") no-repeat center center;
-  }
-
-  .head {
-    margin: 20px auto;
-    height: 60px;
-    width: 750px;
-  }
-
-  .main {
-    margin: 80px auto;
-    height: 400px;
-    width: 750px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    border-style: outset;
-    text-align: left;
-    overflow-y: auto;
-  }
-
-  .each {
-    height: 40px;
-    width: 100px;
-    margin: 20px 20px;
-    border: 1px transparent solid;
-    border-radius: 5%;
-    display: inline-flex;
-    text-align: center;
-    padding-top: 15px;
-  }
-
-  .back {
-    height: 40px;
-    width: 100px;
-    margin: 20px 20px;
-    border: 1px transparent solid;
-    border-radius: 5%;
-    display: inline-flex;
-    text-align: center;
-    padding-top: 15px;
-  }
-
-  .back i {
-    padding-left: 40px;
-  }
-
-  .back:hover {
-    border: 1px rgb(168, 179, 228) solid;
-    border-radius: 5%;
-    transform: scale(1.1, 1.1);
-  }
-
-  .each:hover {
-    border: 1px rgb(168, 179, 228) solid;
-    border-radius: 5%;
-    transform: scale(1.1, 1.1);
-    cursor: pointer;
-  }
-
-  .each p {
-    font-size: 5px;
-    color: red;
-    word-wrap: break-word;
-    width: 80px;
-    padding-left: 5px;
-    overflow-y: auto;
-    text-align: left;
-    vertical-align: middle;
-  }
-
-  i {
-    padding-left: 20px;
-    vertical-align: middle;
-  }
-  i:hover{
-    color: red;
-  }
-
-  ul {
-    text-align: left;
-  }
-
-  li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 20px 20px;
-    vertical-align: middle;
-  }
-
-
-  .icon {
-    height: 50px;
-    width: 50px;
-    border: 0 blue solid;
-    border-radius: 50%;
-    margin-right: 0;
-  }
-
-  .my {
-    margin-left: -30px;
-  }
-
-  .my:hover {}
-
-  .hidden {
-    display: none;
-  }
-
-  table {
-    table-layout: fixed;
-  }
-
-  td {
-    word-break: break-all;
-  }
-
-  .failed {
-    margin: 100px 300px;
-    color: red;
-  }
-
-  .img {
-    width: 624px;
-    height: 336px;
-    font-size: 40px;
-    text-align: center;
-    margin: 20px auto;
-    background-color: #464576;
-  }
-
-  .carousel-item {
-    line-height: 336px;
-    color: #fff;
-    font-family: Arial Black;
-  }
-
-  .show {
-    height: 700px;
-    width: 1522px;
-    position: absolute;
-    background-color: transparent;
-  }
-
-  .dialog {
-    height: 250px;
-    width: 500px;
-    padding: 0 30px;
-    background-color: white;
-    margin: 200px 500px;
-    border: 1px rgb(133, 223, 235) solid;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-    border-radius: 3px;
-  }
-  p{
-    font-family: "Microsoft soft";
-  }
-  input{
-    outline-style: none ;
-    border: 1px solid #ccc; 
-    border-radius: 3px;
-    padding: 5px 4px;
-    height: 25px;
-    width: 200px;
-    font-size: 14px;
-    font-weight: 10;
-    font-family: "Microsoft soft";
-}
-input:focus{
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
-}
-.select {
-		display: inline-block;
-    height: 30px;
-		width: 104px;
-		position: relative;
-		vertical-align: middle;
-		padding: 0;
-		overflow: hidden;
-		background-color: #fff;
-		color: #555;
-		border: 1px solid #aaa;
-		text-shadow: none;
-		border-radius: 4px;	
-		transition: box-shadow 0.25s ease;
-		z-index: 2;
-	}
- 
-	.select:hover {
-		box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
-	}
- 
-	.select:before {
-		content: "";
-		position: absolute;
-		width: 0;
-		height: 0;
-		border: 10px solid transparent;
-		border-top-color: #ccc;
-		top: 14px;
-		right: 10px;
-		cursor: pointer;
-		z-index: -2;
-	}
-	.select select {
-		cursor: pointer;
-		padding: 10px;
-		width: 100%;
-		border: none;
-		background: transparent;
-		background-image: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
- 
-	.select select:focus {
-		outline: none;
-  }
-  .btn { /* 按钮美化 */
-	width: 270px; /* 宽度 */
-	height: 40px; /* 高度 */
-	border-width: 0px; /* 边框宽度 */
-	border-radius: 3px; /* 边框半径 */
-	background: #1E90FF; /* 背景颜色 */
-	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
-	outline: none; /* 不显示轮廓线 */
-	font-family: Microsoft YaHei; /* 设置字体 */
-	color: white; /* 字体颜色 */
-	font-size: 17px; /* 字体大小 */
-}
-.btn:hover { /* 鼠标移入按钮范围时改变颜色 */
-	background: #5599FF;
-}
-</style>
 <script>
   $(function () {
     document.getElementById("close").onclick = function () {
@@ -410,13 +162,12 @@ input:focus{
     $(".main").addClass("loading");
     $(".main").html("");
     $(".main").html("<i style='font-size:151px;color:red;margin-left:263px;margin-top:116px;' class='fa' id='heart'>&#xf004</i>");
-    // $(".main").html("<i style='font-size:100px;color:red;margin-left:263px;margin-top:116px;' class='fa' id='heart'>&#xf004</i>");
-    setInterval(function(){
+    setInterval(function () {
       $("#heart").animate({
-        fontSize:'100px',
+        fontSize: '100px',
         opacity: '0.5',
-        marginLeft:'291px',
-        marginTop:'137px',
+        marginLeft: '291px',
+        marginTop: '137px',
       });
       $("#heart").animate({
         fontSize: '151px',
@@ -424,16 +175,56 @@ input:focus{
         marginLeft: '263px',
         marginTop: '116px',
       });
-    },300);
+    }, 300);
+    $("#time").html(new Date().getFullYear() + "/" + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "    " + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds());
+    setInterval(function () {
+      $("#time").html(new Date().getFullYear() + "/" + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "    " + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds());
+    }, 1000);
+    initClick();
     $(".main").removeClass("loading");
+  }
+
+  function initClick() {
+    var oNumber = document.getElementById("number");
+    var oDiv = oNumber.getElementsByTagName("div");
+    var oSpan = oNumber.getElementsByTagName("span");
+    for (var i = 0; i < oDiv.length; i++) {
+      oDiv[i].style.WebkitTransform = "rotate(" + i * 30 + "deg)";
+    }
+    for (var j = 0; j < oSpan.length; j++) {
+      oSpan[j].style.WebkitTransform = "rotate(" + j * -30 + "deg)";
+    }
+    function ColorNumber() {
+      var oHoure = document.getElementById("houre");
+      var oMinute = document.getElementById("minute");
+      var oSecond = document.getElementById("second");
+
+      var nowTime = new Date();
+      var nowHoure = nowTime.getHours();
+      var nowMinute = nowTime.getMinutes();
+      var nowSecond = nowTime.getSeconds();
+      var houreDeg = (nowMinute / 60) * 30;
+      var minuteDeg = (nowSecond / 60) * 6;
+      oHoure.style.WebkitTransform = "rotate(" + (nowHoure * 30 + houreDeg) + "deg)";
+      oMinute.style.WebkitTransform = "rotate(" + (nowMinute * 6 + minuteDeg) + "deg)";
+      oSecond.style.WebkitTransform = "rotate(" + (nowSecond * 6) + "deg)";
+    }
+    ColorNumber();
+    setInterval(ColorNumber, 1000);
+  }
+  function showClock() {
+    $("#clock").removeClass("hidden");
+  }
+  function hideClock() {
+    $("#clock").addClass("hidden");
   }
 </script>
 
 <body>
   <div class="show hidden">
     <div class="dialog">
-      <i style='font-size:24px;margin-left: 345px;color: rgb(170, 168, 168);cursor: pointer;padding-left: 156px;' class='fa'
-        id="close">&#xf00d</i>
+      <i style='font-size:24px;margin-left: 345px;color: rgb(170, 168, 168);cursor: pointer;padding-left: 156px;'
+        class='fa' id="close">&#xf00d</i>
       <div>
         Name:
         <input type="text" id="db_name" placeholder="请输入数据库名称">
@@ -473,9 +264,33 @@ input:focus{
   </div>
   <div class="main">
   </div>
+  <div id="clock" class="hidden">
+    <div id="number">
+      <div><span>9</span></div>
+      <div><span>10</span></div>
+      <div><span>11</span></div>
+      <div><span>12</span></div>
+      <div><span>1</span></div>
+      <div><span>2</span></div>
+      <div><span>3</span></div>
+      <div><span>4</span></div>
+      <div><span>5</span></div>
+      <div><span>6</span></div>
+      <div><span>7</span></div>
+      <div><span>8</span></div>
+    </div>
+    <div id="houre" class="pointer"></div>
+    <div id="minute" class="pointer"></div>
+    <div id="second" class="pointer"></div>
+  </div>
   <div class="home" style="height: 20px;margin-top: -110px;margin-left: 700px;position: fixed;">
     <i style='font-size:24px;' class='fa' onclick="goHome()">&#xf015</i>
-    <i style='font-size:24px;' class='fa' onclick="goDB()">&#xf1c0</i>
+    <i style='font-size:20px;' class='fa' onclick="goDB()">&#xf1c0</i>
+    <!-- <i style='font-size:20px;' class='fa' onclick="goDB()">&#xf009</i> -->
+    <i style='font-size:15px;font-style:normal;' id="time" onmouseover="showClock()" onmouseout="hideClock()"></i>
+    <i style='font-size:10px;' class='fa'>身份: 管理员</i>
+    <i style='font-size:10px;' class='fa'><img src="img/a1.jpg" class="icon" alt="图片不见"></i>
+    <i style='font-size:12px;' class='fa'>hbb&#xf107</i>
   </div>
 </body>
 
