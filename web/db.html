@@ -92,6 +92,7 @@
             if (i == 0) {
               for (var i in data[i]) {
                 var td = document.createElement("td");
+                td.contentEditable = true;
                 $(td).html(
                   `${i}`
                 );
@@ -100,6 +101,7 @@
             }
             for (var j in data[i]) {
               var td = document.createElement("td");
+              td.contentEditable = true;
               $(td).html(
                 `${data[i][j]}`
               );
@@ -176,12 +178,21 @@
         marginTop: '116px',
       });
     }, 300);
-    $("#time").html(new Date().getFullYear() + "/" + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "    " + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds());
+    $("#time").html(getTime());
     setInterval(function () {
-      $("#time").html(new Date().getFullYear() + "/" + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "    " + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds());
+      $("#time").html(getTime());
     }, 1000);
     initClick();
     $(".main").removeClass("loading");
+  }
+  function fillZero(str){
+    if (str < 10) {
+      str = "0" + str;
+    }
+    return str;
+  }
+  function getTime() {
+    return new Date().getFullYear() + "/" + fillZero((new Date().getMonth() + 1)) + "/" + fillZero(new Date().getDate()) + "    " + fillZero(new Date().getHours()) + ":" + fillZero(new Date().getMinutes()) + ":" + fillZero(new Date().getSeconds());
   }
 
   function initClick() {
@@ -290,7 +301,7 @@
     <i style='font-size:15px;font-style:normal;' id="time" onmouseover="showClock()" onmouseout="hideClock()"></i>
     <i style='font-size:10px;' class='fa'>身份: 管理员</i>
     <i style='font-size:10px;' class='fa'><img src="img/a1.jpg" class="icon" alt="图片不见"></i>
-    <i style='font-size:12px;' class='fa'>hbb&#xf107</i>
+    <i style='font-size:12px;padding: 0;' class='fa'>hbb&#xf107</i>
   </div>
 </body>
 
